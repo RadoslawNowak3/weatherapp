@@ -1,4 +1,4 @@
-**Overview**
+# **Overview**
 
 This is a simple application that allows users to view weather forecasts for cities present in the database. In principle it's supposed to display current forecasts, and it's capable of doing so with small code adjustments, but due to budget and hardware limitations it only displays sample archival data from 2017. It was created by using React for the frontend, and Express + NodeJS for the backend, with MySQL serving as the database.
 
