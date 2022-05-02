@@ -17,6 +17,8 @@ To run the application the machine needs to have NodeJS and NPM installed, and t
 
 To run the application after installing all the dependencies, first access the server directory in the terminal and start the server by typing the " npm start" (or node index.js ) command, and then access the client directory in a separate terminal and type " npm start" again (or, alternatively, react-scripts start ), which will run the client in a new tab.
 
+The application also requires access to ports 3000 and 3001, but they can be changed.
+
 ## **Features**
 
 The app is divided into a client and a server.
@@ -40,4 +42,4 @@ The database consists of two tables – one containing cities, and one containin
 
 ## **Important notes**
 
-Due to some problems regarding the hardware and the external API the server's features have been limited. The weather APIs available on the internet do not allow users to use their bulk download features for free, and they also put a limit on regular daily requests, which prevents the server from acquiring current forecast data. Fortunately, openweathermap provides mock-data for application testing. Unfortunately, the files are too large to handle with standard means (over 100 mb after unzipping the archive), so, the application uses a much smaller, manually extracted data sample of around 500 cities instead. Currently, database updates are triggered manually via requests, but the index.js file contains a commented-out section of code that would trigger automatic updates every day at a set hour after minimal testing and adjustments (namely, adding the deletion of expired records from the database).
+Due to some problems regarding the hardware and the external API the server's features have been limited. The weather APIs available on the internet do not allow users to use their bulk download features for free, and they also put a limit on regular daily requests, which prevents the server from acquiring current forecast data. Fortunately, openweathermap provides mock-data for application testing. Unfortunately, the files are too large to handle with standard means (over 100 mb after unzipping the archive), so, the application uses a much smaller, manually extracted data sample of around 500 cities instead. Currently, database updates are triggered manually via requests, but the index.js file contains a commented-out section of code that would trigger automatic updates every day at a set hour after minimal testing and adjustments (namely, adding the deletion of expired records from the database). There is also a slight issue with the temperatures included in the mock-data from OpenWeatherMap - the temperature format is not uniform, some data is provided in Kelvin, some in Fahrenheit and some in Celsius, which results in inconsistent numbers, if it were real data, then it would be in a uniform format chosen via request flags.
