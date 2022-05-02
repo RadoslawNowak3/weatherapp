@@ -5,7 +5,7 @@ It was created using React for the frontend, Express + NodeJS for the backend, a
 
 ## **How to run it?**
 
-To run the application the machine needs to have NodeJS and NPM installed, and the project files must be downloaded. Once these conditions have been satisfied, the following dependencies must also be installed by accessing the client and server directories and running " npm install" commands.
+To run the application the machine needs to have NodeJS and NPM installed, and the project files must be downloaded. Once these conditions have been satisfied, the following dependencies must also be installed by accessing the client and server directories and running "npm install" commands.
 
 ### Server dependencies:
 
